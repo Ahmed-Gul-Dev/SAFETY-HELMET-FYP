@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GuardianLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GuardianLogin">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Hello Rider !"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="40dp"
+            android:text="ID number"
+            android:textColor="@color/pink"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/rider_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/text0"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/custom_edittext"
+            android:drawablePadding="8dp"
+            android:hint="Enter Your ID"
+            android:padding="8dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/pink"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rider_id"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="@color/pink"
+            android:textSize="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/GGpassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/text2"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_edittext"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GGpassword"
+            android:layout_marginStart="35dp"
+            android:text="Remember me"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:background="@color/white"
+            android:padding="14dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/LoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rememberme"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/purple"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

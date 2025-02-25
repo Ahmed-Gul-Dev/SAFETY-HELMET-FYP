@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".KmDriven">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KmDriven">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/driven" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="KM Driven"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Keep track of your journey.Check how many times Km are driven to monitor the total distance covered by the rider."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tagline"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Total Km Driven"
+            android:textColor="@color/pink"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/kmdrivenT"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/text1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="16dp"
+            android:text="100 Km"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/kmdrivenT"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_below="@id/text1"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:background="@drawable/custom_edittext"-->
+        <!--            android:hint="100 Km"-->
+        <!--            android:padding="16dp"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textColorHint="@color/pink"-->
+        <!--            android:textSize="18sp" />-->
+
+
+        <TextView
+            android:id="@+id/logtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kmdrivenT"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="KM Driven History"
+            android:textColor="@color/pink"
+            android:textSize="18dp" />
+
+
+        <!--        History Log View -->
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logtext"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="16dp"
+            android:background="@drawable/rectangle"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Source"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="fill"
+                    android:text="Destination"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="fill"
+                    android:text="KM Driven"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="A"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="B"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="fill"
+                    android:text="20 Km"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="D"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="fill"
+                    android:text="30 Km"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <!--            <TableRow>-->
+
+            <!--                <TextView-->
+            <!--                    android:paddingStart="16dp"-->
+            <!--                    android:id="@+id/parameter33"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:text="Lahore"-->
+            <!--                    android:gravity="fill"-->
+            <!--                    android:textColor="@android:color/black"-->
+            <!--                    android:textSize="20sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/p34"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_gravity="center_horizontal"-->
+            <!--                    android:text="SITE"-->
+            <!--                    android:textColor="@android:color/black"-->
+            <!--                    android:textSize="20sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/p35"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_gravity="center_horizontal"-->
+            <!--                    android:gravity="fill"-->
+            <!--                    android:text="40 Km"-->
+            <!--                    android:textColor="@android:color/black"-->
+            <!--                    android:textSize="20sp" />-->
+            <!--            </TableRow>-->
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Address Line"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Total Km Driven Today"
+            android:textColor="@color/pink"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/kmdrivenDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/text2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:padding="16dp"
+            android:text="65 Km"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

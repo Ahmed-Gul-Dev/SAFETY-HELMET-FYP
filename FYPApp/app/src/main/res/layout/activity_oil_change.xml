@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OilChange">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/oilchange" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Oil Change Date"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tagline"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/title"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:text="It's time to to schedule an oil change for your trusty steed.Keep your rider's bike running smoothly with a fresh dose of quality oil."-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="14dp" />-->
+
+    <TextView
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/custom_edittext"
+        android:text="Current Date"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <!--        Calendar View -->
+    <!-- Add CalendarView to display the Calendar -->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/select_date"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="10dp"></CalendarView>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Km You Want to Ride"
+        android:textColor="@color/pink"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/kmdriven"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/text2"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="0 Km"
+        android:padding="8dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/pink"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/SubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/kmdriven"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/ecc_color"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

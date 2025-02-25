@@ -1,0 +1,8 @@
+ESP32
+
+GPS Sensor -->   TX-16 , RX-17
+Relay Module --> 23,25,26,27
+LCD --> (I2C)
+Ultrasonic Sensor --> Trig-18,Echo-19
+Bike SW --> 34
+ADXL345 --> (I2C) for km driven and Rider Speed

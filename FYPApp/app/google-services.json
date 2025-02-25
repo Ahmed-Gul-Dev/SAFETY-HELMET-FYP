@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "725842520919",
+    "firebase_url": "https://safetyhelmet-6bdea-default-rtdb.firebaseio.com",
+    "project_id": "safetyhelmet-6bdea",
+    "storage_bucket": "safetyhelmet-6bdea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725842520919:android:db965800ce3eecebbcec12",
+        "android_client_info": {
+          "package_name": "com.example.fypapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBI--qnS482xps6RrrKhLdrur6l06yTyY"
+        },
+        {
+          "current_key": "AIzaSyDzY8w39HbTxOvaWMyYX0I45YdNbVAxD3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725842520919:android:9be04d9f3ac099a5bcec12",
+        "android_client_info": {
+          "package_name": "com.example.safetyhelmet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBI--qnS482xps6RrrKhLdrur6l06yTyY"
+        },
+        {
+          "current_key": "AIzaSyDzY8w39HbTxOvaWMyYX0I45YdNbVAxD3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

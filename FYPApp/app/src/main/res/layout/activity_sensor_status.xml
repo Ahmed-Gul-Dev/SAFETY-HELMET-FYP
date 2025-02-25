@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SensorStatus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SensorStatus">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sensor" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Sensor's Status"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Ensure safety with a quick glance.Verify the status of all bike and helmet sensors,confirming that your protective gear is in working condition."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tagline"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Sensor Readings"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="16dp"
+            android:background="@drawable/rectangle"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sensor Name"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="fill"
+                    android:text="Sensor Result"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1. ADXL355"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2. MPU6050"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/s2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3. Voltage Sensor"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/s3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:paddingStart="16dp"
+                    android:id="@+id/parameter5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4. GPS Sensor"
+                    android:gravity="fill"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/s4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
